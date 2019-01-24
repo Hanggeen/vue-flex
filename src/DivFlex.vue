@@ -18,22 +18,31 @@ export default {
       type: String,
       default: 'flex-start'
     },
-    alignItems: {
+    items: {
       type: String,
       default: 'stretch'
     },
-    alignContent: {
+    content: {
       type: String,
       default: 'stretch'
+    }
+  },
+  data () {
+    return {
+      flexDirection: this.direction,
+      flexWrap: this.wrap,
+      justifyContent: this.justify,
+      alignItems: this.items,
+      alignContent: this.content
     }
   },
   computed: {
     flexClass: function () {
       return {
         display: 'flex',
-        flexDirection: this.direction,
-        flexWrap: this.wrap,
-        justifyContent: this.justify,
+        flexDirection: this.flexDirection,
+        flexWrap: this.flexWrap,
+        justifyContent: this.justifyContent,
         alignItems: this.alignItems,
         alignContent: this.alignContent
       }
