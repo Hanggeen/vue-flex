@@ -47,8 +47,6 @@ export default {
         alignContent: this.alignContent
       }
     }
-  },
-  mounted () {
   }
 }
 </script>

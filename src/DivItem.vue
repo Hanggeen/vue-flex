@@ -53,7 +53,6 @@ export default {
         this.flexShrink = 1;
       }
       return {
-        display: 'flex',
         order: this.flexOrder,
         flexGrow: this.flexGrow,
         flexShrink: this.flexShrink,
@@ -61,17 +60,6 @@ export default {
         alignSelf: this.flexAlignSelf
       }
     }
-  },
-  mounted () {
-    console.log(this.basis);
-    console.log(this.fixed == ""?'一个固定':'');
-    console.log(this.expand == ""?'一个伸展':'')
   }
 }
 </script>
-<style>
-.flexitem > div,h1,h2,h3,h4,h5,h6,p,table,a,textarea
-{
-  width: 100%;
-}
-</style>
