@@ -7,7 +7,7 @@ import VuePlugin from 'rollup-plugin-vue';
 export default {
   input: 'index.js',
   output: {
-    file: './dist/excom.js',
+    file: './dist/vue-flex.min.js',
     format: 'es'
   },
   plugins: [
