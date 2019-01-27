@@ -1,5 +1,26 @@
 # vue-flex
-Some easy vue components basis on css’ flex , focus on layout.
+#### 两个简单的flex组件（父容器和子容器），帮助开发者快捷地实现多种flex布局。
+
+##### 父容器仅定义以下样式
+```css
+flex-direction
+flex-wrap
+flex-flow
+justify-content
+align-items
+align-content
+```
+
+##### 子容器仅定义以下样式
+```css
+order
+flex-grow
+flex-shrink
+flex-basis
+flex
+align-self
+```
+
 ### 用法
 ##### 圣杯布局
 ```html
